@@ -9,6 +9,9 @@ const Settings = lazy(() => import('../pages/Settings'));
 const Tables = lazy(() => import('../pages/Tables'));
 const Alerts = lazy(() => import('../pages/UiElements/Alerts'));
 const Buttons = lazy(() => import('../pages/UiElements/Buttons'));
+const ManagerList = lazy(() => import('../pages/ManagerList'));
+const UserList = lazy(() => import('../pages/UserList'));
+const FileIndexList = lazy(() => import('../pages/FileIndexList'));
 
 const coreRoutes = [
   {
@@ -55,6 +58,21 @@ const coreRoutes = [
     path: '/ui/buttons',
     title: 'Buttons',
     component: Buttons,
+  },
+  {
+    path: '/managerList',
+    title: 'managerList',
+    component: ManagerList,
+  },
+  {
+    path: '/userList',
+    title: 'User List',
+    component: UserList,
+  },
+  {
+    path: '/fileList',
+    title: 'File List',
+    component: FileIndexList,
   },
 ];
 
